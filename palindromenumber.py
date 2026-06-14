@@ -1,23 +1,10 @@
 class Solution(object):
-    def mySqrt(self, x):
+    def isPalindrome(self, x):
         """
         :type x: int
-        :rtype: int
+        :rtype: bool
         """
-        left = 0
-        right = x
-        
-        while left <= right:
-            mid = (left + right)//2
-            if mid * mid < x:
-                left = mid + 1
-            elif mid * mid > x:
-                right = mid - 1
-            else:
-                return mid
-        
-        return right
-        
-        
+        num = str(x)
+        return num == num[::-1]
 
-        
+        # convert num to str and check if it's reverse ([::-1]) is equal
