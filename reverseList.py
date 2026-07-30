@@ -15,7 +15,7 @@ class Solution(object):
 
         while curr:
             next_n = curr.next
-            curr.next    = prev
+            curr.next = prev
             prev = curr
 
             curr = next_n
