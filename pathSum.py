@@ -17,7 +17,7 @@ class Solution(object):
             
             targetSum -= root.val
             path.append(root.val)
-            if not root.left and not root.right:
+            if not root.left and not root.right :
                 if targetSum == 0:
                     res.append(path[:])
             else:
